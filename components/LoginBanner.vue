@@ -15,16 +15,18 @@ import { useProductStore } from '~/store'
 import { logout } from '~/types'
 
 const store = useProductStore()
-const config = useRuntimeConfig().public
+const config = useRuntimeConfig()
 
 const Kakaoinit = () => {
   Kakao.init('6e86cd6ba029033989889fdda42c441a')
   Kakao.isInitialized()
+
+  // const response = await $fetch(`https://kauth.kakao.com/oauth/authorize?response_type=code&client_id=${config.public.restApi}&redirect_uri=${config.public.redirect_uri}`)
 }
 
 const loginWithKakao = () => {
   Kakao.Auth.authorize({
-    redirectUri: config.redirectUri
+    redirectUri: config.public.redirectUri
   })
 }
 

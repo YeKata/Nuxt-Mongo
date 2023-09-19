@@ -36,8 +36,8 @@ export const useProductStore = defineStore('products', () => {
     }
   }
 
-  const deleteCartItem = (index: cartItem) => {
-    const i = index.id
+  const deleteCartItem = (index: number) => {
+    const i = index
     for (const a in cartItems) {
       if (i === cartItems[a].id) {
         if (cartItems[a].count > 1) {

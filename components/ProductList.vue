@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-const products:any = reactive(await useAsyncData('product', () => $fetch('http://localhost:3000/products')))
+const products:any = reactive(await useAsyncData('product', () => $fetch('https://yekata.github.io/mongo/products')))
 </script>
 
 <style scoped>

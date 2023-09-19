@@ -58,6 +58,16 @@ const deleteProduct = async () => {
   store.idNum = 0
   router.push('/')
 }
+
+useHead({
+  title: `Shopping Item Detail - ${product.name}`,
+  meta: [{
+    hid: 'description',
+    name: 'description',
+    content: `이상품은 ${product.name}입니다.`
+  }]
+})
+
 </script>
 
 <style scoped>

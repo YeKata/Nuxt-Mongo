@@ -7,7 +7,7 @@
           <p>{{ Item.name }}</p>
           <span>{{ Item.price }}</span>
           <p>{{ Item.count }} 개</p>
-          <p /><button @click="deletecart(Item)">
+          <p /><button @click="deletecart(Item.id)">
             x
           </button>
         </div>
