@@ -1,6 +1,5 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## NUXT-MONGO
+캡틴판교님의 NUXT-SHOPPING 앱을 NUXT3, TYPESCRIPT로 마이그레이션 및 REST API를 이용하여 MongoDB 연동 및 0Auth 카카오 로그인 구현
 
 ## Setup
 
